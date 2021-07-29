@@ -11,6 +11,44 @@ width:90%;
 
 }
 
+
+main {
+
+display: grid;
+grid-template-columns: 250px auto 250px 250px auto ;
+grid-template-rows: auto auto;
+grid-template-areas:
+"grid_student grid_breaking grid_css"
+"grid_boy grid_list";
+}
+
+
+.student {
+grid-area: grid_student;
+
+
+}
+
+.breaking {
+grid-area: grid_breaking;
+
+}
+
+.CSS {
+grid-area: grid-css;
+}
+
+.boy {
+
+grid-area: grid_boy;
+}
+
+.list {
+
+grid-area:grid_list;
+};
+
+
 h1,h3 {
 
 font-style: italic;
