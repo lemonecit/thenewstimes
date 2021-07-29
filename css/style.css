@@ -3,19 +3,21 @@ body {
 
 margin:0px;
 padding:0px;
-background-color: blue;
-color:black;
-margin-left: 5%;
-margin-right:5%;
-width:90%;
+
+margin-left: auto;
+margin-right:auto;
+width:80%;
 
 }
 
 
-main {
-
+.container {
+  border:2px solid black;
+height:auto;
+background-color:black;
+grid-gap: 5px;
 display: grid;
-grid-template-columns:auto auto auto;
+grid-template-columns:300px auto 300px;
 grid-template-rows: auto auto;
 grid-template-areas:
 "grid_student grid_breaking grid_css"
@@ -24,36 +26,67 @@ grid-template-areas:
 
 
 .student {
+  padding:10px;
+background-color:#fff;
 grid-area: grid_student;
 
 
 }
 
 .breaking {
+    padding:10px;
+  background-color:#fff;
 grid-area: grid_breaking;
 
 }
 
-.CSS {
-grid-area: grid-css;
+.breaking>p {
+
+  line-height: 1.5em;
+  width: 90%;
+  font-size: 14px;
+  font-family: arial;
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.css {
+    padding:10px;
+    background-color:#fff;
+grid-area: grid_css;
 }
 
 .boy {
-
+    padding:10px;
+  background-color:#fff;
 grid-area: grid_boy;
 }
 
 .list {
 
+  background-color:#fff;
 grid-area:grid_list;
-};
+}
 
 
-h1,h3 {
+h1 {
 
-font-style: italic;
-font-family: cursive;
-text-transform: capitalize;
+  text-align: center;
+  font-size: 48px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-style: italic;
+
+}
+
+h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: italic;
+text-align: center;
 
 }
 
@@ -61,5 +94,66 @@ p {
 
 font-size: 14px;
 font-family: arial;
+
+}
+
+ul {
+
+margin:0px;
+padding:0px;
+
+}
+
+
+li {
+
+  font-size: 16px;
+      line-height: 50px;
+      height: 50px;
+      display: block;
+      padding-left: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: arial;
+
+}
+
+.po {
+
+background-color:#fdebaf;
+
+}
+
+.te {
+
+background-color:#9aeaeb;
+
+}
+
+
+.lo {
+
+background-color:#82ebc7;
+
+}
+
+.op {
+
+background-color:#81b9f9;
+
+}
+
+.sp {
+
+background-color:#9f9df8;
+
+}
+
+
+img {
+display: block;
+  width: 90%;
+      margin-left: auto;
+      margin-right: auto;
 
 }
